@@ -1,0 +1,46 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.homebutton{
+    color: rgb(45, 79, 198);
+    position: absolute;
+    top: 30px;
+    left: 20%;
+}
+.index{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.sections{
+    color: gray;
+}
+
+.booster{
+    text-align: center;
+    padding: 15px 10px 15px;
+    position: absolute;
+    top: 15px;
+    left: 77%;
+    background-color: rgb(45, 79, 198);
+    border-radius: 5%;
+    
+}
+.booster a{
+    color: white;
+}
+.header{
+    height: 80px;
+    background: rgba(0, 255, 255, 0.3);
+    position:absolute;
+    inset: 0px;
+}
+
+
