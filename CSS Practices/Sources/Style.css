@@ -1,10 +1,11 @@
+
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
 a{
     text-decoration: none;
 }
-section{
+body{
     display: flex;
     flex-direction: column;
 }
@@ -12,11 +13,13 @@ section{
     color: rgb(45, 79, 198);
     position: absolute;
     top: 30px;
-    left: 20%;
+    left: 10%;
+    font-size: larger;
+    font-weight: bold;
 }
 .index{
     position: absolute;
-    top: 40%;
+    top: 30px;
     left: 50%;
     display: flex;
     gap: 20px;
@@ -42,12 +45,43 @@ section{
 }
 .header{
     height: 80px;
+    width: 50%;
+    display: flex;
+    justify-content: right;
     background: rgba(0, 255, 255, 0.3);
-    position:absolute;
-    inset: 0px;
-}
-
-
-.titleLeft{
     
 }
+
+.section1{
+    height: 475px;
+    background-color: rgba(0, 255, 255, 0.1);
+}
+
+.photoRight{
+    display: flex;
+    justify-content: right;
+}
+
+.titleLeft{
+    width: 50%;
+    height: 475px;
+    position: absolute;
+    padding: 0 0 0 10%;
+}
+
+.Title1{
+    color: rgb(24, 45, 94);
+    font-size: xxx-large;
+    font-weight: bolder;
+}
+
+.Body1{
+    color: gray;
+    font-weight: lighter;
+}
+
+/*
+Degradado 
+background: rgb(21,124,221);
+background: linear-gradient(90deg, rgba(21,124,221,1) 0%, rgba(35,83,213,1) 100%);
+*/
