@@ -4,6 +4,10 @@
 a{
     text-decoration: none;
 }
+section{
+    display: flex;
+    flex-direction: column;
+}
 .homebutton{
     color: rgb(45, 79, 198);
     position: absolute;
@@ -44,3 +48,6 @@ a{
 }
 
 
+.titleLeft{
+    
+}
