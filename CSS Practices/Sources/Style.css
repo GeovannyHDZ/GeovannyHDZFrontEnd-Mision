@@ -1,51 +1,6 @@
-/*
-
-
-
-
-
-
-
-.header{
-    height: 80px;
-    width: 50%;
-    display: flex;
-    justify-content: right;
-    background: rgba(0, 255, 255, 0.3);
-    
-}
-
-.section1{
-    height: 475px;
-    background-color: rgba(0, 255, 255, 0.1);
-}
-
-.photoRight{
-    display: flex;
-    justify-content: right;
-}
-
-.titleLeft{
-    width: 50%;
-    height: 475px;
-    position: absolute;
-    padding: 0 0 0 10%;
-}
-
-.Title1{
-    color: rgb(24, 45, 94);
-    font-size: xxx-large;
-    font-weight: bolder;
-}
-
-.Body1{
-    color: gray;
-    font-weight: lighter;
-}
-*/
 /* Estilos generales*/
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica;
 }
 a{
     text-decoration: none;
@@ -53,60 +8,109 @@ a{
 body{
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
-
-/* Estilos Header*/
 .contenedor{
     display: flex;
     flex-direction: row;
-    
+    margin: 0 10% 0 10%;
 }
-.header{
+.contenedorPhoto{
+    display: flex;
+    flex-direction: row;
+}
+/* Estilos Navigation Bar*/
+
+.NavBar{
     position: relative;
     width: 100%;
-    background-color: aqua;
-    padding-top: 2%;
-    padding-bottom: 2%;
+   
 }
+
+.NavigationBar{
+    list-style: none;
+    margin: 0;
+    padding: 20px 10% 20px 10%;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    text-align: center;
+}
+
 .Vaccination{
     color: rgb(45, 79, 198);
     font-size: larger;
     font-weight: bold;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 276px;
+    
 }
 .sections{
     color: gray;
-    padding-right: 5%;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 60px;
 }
 .booster{
-    text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: rgb(45, 79, 198);
-    border-radius: 5%;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(21,124,221,1) 0%, rgba(35,83,213,1) 100%); 
+    border-radius: 20%;
     color: white;
-    justify-content: right;
+    
 }
+
 
 
 /* Estilos Titulos*/
 .Title{
     width: 50%;
     height: 475px;
-    background-color: red;
+    padding-top: 2%;
+    padding-bottom: 2%;
 
 }
+.TitleR{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 50%;
+    height: 586px;
+    background: linear-gradient(90deg, rgba(21,124,221,1) 0%, rgba(35,83,213,1) 100%); 
+    align-items: flex-end;  
+    justify-content: center;
+    display: flex;
+}
+
+.Title1{
+    color: rgb(24, 45, 94);
+    font-size: xxx-large;
+    font-weight: bolder;
+    padding-left: 10%;
+}
+.Body1{
+    color: gray;
+    font-weight: lighter;
+    padding-left: 10%;
+}
+
+/*Estilos Schedule*/
 .Schedule{
     width: 50%;
     height: 80px;
     background-color: aquamarine;
     position: absolute;
-    left: 10%;
+    left: 8%;
     top: 55%;
 }
+.options{
+    list-style-image: url('./Sources/Photos/checkmark.jpg');
+}
+
+
 
 .Vaccines{
     width: 100%;
@@ -139,8 +143,3 @@ body{
     background-color:darkgoldenrod;
 }
 
-/*
-Degradado 
-background: rgb(21,124,221);
-background: linear-gradient(90deg, rgba(21,124,221,1) 0%, rgba(35,83,213,1) 100%);
-*/
