@@ -107,7 +107,16 @@ li a{
     top: 55%;
 }
 .options{
-    list-style-image: url('./Sources/Photos/checkmark.jpg');
+    list-style: none;
+    margin: 0;
+    padding: 20px 10% 20px 10%;
+    overflow: hidden;
+}
+
+.option{
+    display: block;
+    text-align: center;
+    padding: 0 40px 0 0;
 }
 
 
