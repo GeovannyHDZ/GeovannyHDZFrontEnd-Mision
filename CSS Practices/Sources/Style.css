@@ -70,7 +70,7 @@ li a{
 /* Estilos Titulos*/
 .Title{
     width: 50%;
-    height: 475px;
+    height: 500px;
     padding-top: 2%;
     padding-bottom: 2%;
 
@@ -80,7 +80,7 @@ li a{
     top: 0%;
     left: 50%;
     width: 50%;
-    height: 583px;
+    height: 608px;
     background: rgba(35,83,213,1); 
     align-items: flex-end;  
     justify-content: center;
@@ -115,8 +115,8 @@ li a{
 
 /*Estilos Schedule*/
 .Schedule{
-    width: 50%;
-    height: 80px;
+    width: 60%;
+    height: 100px;
     position: absolute;
     left: 10%;
     top: 60%;
@@ -131,7 +131,8 @@ li a{
     background: rgba(35,83,213,1); 
     border-radius: 20%;
     color: white;
-    padding: 20px 10px 20px 10px;
+    padding: 20px 40px 20px 40px;
+    margin: 0 20px 0 0;
 
 }
 
