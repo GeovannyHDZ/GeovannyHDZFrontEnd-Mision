@@ -95,9 +95,9 @@ li a{
     
 }
 .Body1{
-    color: gray;
-    font-weight: lighter;
-    
+    color: rgb(91, 103, 128);
+    font-weight: 500;
+    line-height: 0.7cm;
 }
 .options{
     list-style: none;
@@ -162,13 +162,22 @@ li a{
     align-items: center;
     
 }
-
+/*Estilos Why Should I Vaccine?*/
 .Why{
     width: 100%;
-    height: 100px;
-    background-color: blueviolet;
+    height: 200px;
 }
-
+.Question{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgb(24, 45, 94);
+}
+.Answer{
+    font-weight: 500;
+    color: rgb(91, 103, 128);
+    line-height: 0.7cm;
+}
+/*Estilos Why Should I Vaccine? Reasons*/
 .reasons{
     width: 100%;
     height: 80px;
