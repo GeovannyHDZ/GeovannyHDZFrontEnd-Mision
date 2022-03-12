@@ -27,7 +27,6 @@ ul{
 .NavBar{
     position: relative;
     width: 100%;
-   
 }
 
 .NavigationBar{
@@ -59,9 +58,11 @@ li a{
 }
 .booster{
     font-weight: bold;
-    background: linear-gradient(90deg, rgba(21,124,221,1) 0%, rgba(35,83,213,1) 100%); 
+    background: rgba(35,83,213,1); 
     border-radius: 20%;
     color: white;
+    padding: 5px 10px 5px 10px;
+    
     
 }
 
@@ -120,12 +121,22 @@ li a{
     position: absolute;
     left: 10%;
     top: 60%;
-    background-color: rgba(255, 255, 255, 0.98);
+    background-color: rgba(255, 255, 255, 0.95);
+    align-items: baseline;
 }
-.sch{
+.schTxtSub{
     color: rgb(24, 45, 94);
+    font-size: large;
+    padding-left: 15px;
     font-weight: bold;
+
 }
+.schTxt{
+    color: gray;
+    font-size: small;
+    padding: 0 80px 0 20px;
+}
+
 .submit{
     font-weight: bold;
     background: rgba(35,83,213,1); 
@@ -136,12 +147,19 @@ li a{
 
 }
 
-
+/*Estilos Vaccines*/
+.Vaccines img{
+    width: 70%;
+    opacity: 0.5;
+    color: gray;
+}
 
 .Vaccines{
     width: 100%;
-    height: 80px;
-    background-color:aqua;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
