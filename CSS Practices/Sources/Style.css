@@ -81,7 +81,7 @@ li a{
     left: 50%;
     width: 50%;
     height: 608px;
-    background: rgba(35,83,213,1); 
+    background: linear-gradient(90deg, rgba(21,124,221,1) 0%, rgba(35,83,213,1) 100%);
     align-items: flex-end;  
     justify-content: center;
     display: flex;
@@ -197,17 +197,52 @@ li a{
     color: rgb(24, 45, 94);
 }
 
+
+/*Estilos Preparations Before Vaccine*/
 .preparationsPhoto{
     width: 50%;
-    height: 475px;
-    background-color:tomato; 
+    background: linear-gradient(90deg, rgba(21,124,221,1) 0%, rgba(35,83,213,1) 100%);
     align-items: flex-end;  
     justify-content: center;
     display: flex;
 }
-.preparationsTxt{
-    
-}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  .collapsible:after {
+    content: '\25BC';
+    font-size: 13px;
+    color: rgb(24, 45, 94);
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\25B2";
+  }
+.active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+
+
+  
 
 .Contact{
     width: 50%;
