@@ -259,11 +259,21 @@ li a{
     flex-wrap: wrap;
 }
 .contacts{
-    width: 40%;
+    width: 30%;
     box-shadow: 0px 0px 5px 0px rgb(45, 79, 198);
     border-style: outset;
     border-color: rgba(255, 255, 255, 0.5);
     padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.iconContactsContainer{
+    display: flex;
+    flex-direction: column;
+}
+.IconData{
+    display: flex;
+    flex-direction: row;
 }
 
 .ContactsTxt{
