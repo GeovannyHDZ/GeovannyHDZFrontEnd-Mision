@@ -206,43 +206,49 @@ li a{
     justify-content: center;
     display: flex;
 }
-
+.preparationsTxt{
+    width: 35%;
+    margin: 0 30px 0 30px;
+    
+}
 .collapsible {
-    background-color: #777;
-    color: white;
+    color: rgb(45, 79, 198);
+    background-color: white;
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    box-shadow: 0px 0px 5px 0px rgb(45, 79, 198);
+    border-style: outset;
+    border-color: rgba(255, 255, 255, 0.5);
+
   }
   .collapsible:after {
     content: '\25BC';
-    font-size: 13px;
-    color: rgb(24, 45, 94);
     float: right;
     margin-left: 5px;
+
+
   }
   
   .active:after {
     content: "\25B2";
   }
 .active, .collapsible:hover {
-    background-color: #555;
+    background-color: rgb(24, 45, 94);
   }
   
 .content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+
   }
 
 
 
-  
+
 
 .Contact{
     width: 50%;
