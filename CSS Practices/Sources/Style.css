@@ -329,18 +329,63 @@ footer{
 }
 .footer_nav{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row; 
 }
-.footer_nav ul{
-	text-align: left;
-}
+
 .footer_nav li{
     float: none;
-    text-align: left;
+    line-height: 1.3cm;
 }
 
 .footer_nav li a{
     display: block;
     text-align: left;
+}
+
+.footer_nav_title{
+    color: rgb(24, 45, 94);
+    font-size: x-large;
+    font-weight: bolder;
+   
+}
+
+.footer_nav_sub{
+    font-weight: 500;
+    color: rgb(91, 103, 128);
+    
+}
+.footer__logo{
+    color: rgb(45, 79, 198);
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.footer__addr p{
+    font-weight: 500;
+    color: rgb(91, 103, 128);
+    line-height: 0.7cm;
+}
+
+.legal p{
+    font-weight: 500;
+    color: rgb(91, 103, 128);
+}
+
+.Terms_Policy a{
+    padding: 0 10px 0 10px;
+    font-weight: 500;
+    color: rgb(91, 103, 128);
+}
+.credits{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(43, 43, 43);
+    color: #FAEFE9;
+    padding: 10px;
+    margin-top: 70px;
+}
+.credits p{
+    font-size: 14px;
+    font-family: monospace;
 }
