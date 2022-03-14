@@ -330,8 +330,17 @@ footer{
 .footer_nav{
     display: flex;
     flex-direction: row;
+    
+}
+.footer_nav ul{
+	text-align: left;
 }
 .footer_nav li{
-    float:none;
+    float: none;
+    text-align: left;
 }
 
+.footer_nav li a{
+    display: block;
+    text-align: left;
+}
