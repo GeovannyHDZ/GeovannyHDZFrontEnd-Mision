@@ -23,7 +23,10 @@ const fetchPokemon = () => {
             let pokeSAttack = data.stats[3].base_stat;
             let pokeSDefense = data.stats[4].base_stat;
             let pokeSpeed = data.stats[5].base_stat;
-
+            let Moves = data.moves;
+            
+            
+            
             
             pokeImage(pokeImg, "pokeImg");
             pokeImage(pokeImgBack, "pokeImgBack");
@@ -34,6 +37,9 @@ const fetchPokemon = () => {
             pokeInner(pokeSAttack, "pokeSAttack");
             pokeInner(pokeSDefense, "pokeSDefense");
             pokeInner(pokeSpeed, "pokeSpeed");
+            
+            pokeMoves(Moves);
+           
         }
     });
 }
@@ -46,3 +52,20 @@ const pokeImage = (url, wherePhoto) => {
 const pokeInner = (data, whereInner) => {
     document.getElementById(whereInner).innerHTML = data;
 }
+
+
+
+
+/*
+function pokeMoves(Moves) {
+    let valores = Object.values(Moves);
+    for(let i=0; i< valores .length; i++){
+        pokeInner(valores[i].moves.name, "pokeMoves");
+    }
+}
+
+/*
+Moves.forEach(function(movimiento, index) {
+        console.log(`${index} : ${movimiento.move.name}`);
+        document.getElementById("pokeMoves").innerHTML = `${index} : ${movimiento.move.name}`;
+    });*/ 
