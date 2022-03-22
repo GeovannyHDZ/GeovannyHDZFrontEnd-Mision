@@ -14,18 +14,35 @@ const fetchPokemon = () => {
     }).then((data) => {
         if (data) {
             let pokeImg = data.sprites.front_default;
-            pokeImage(pokeImg);
+            let pokeImgBack = data.sprites.back_default;
             let pokemontype = data.types[0].type.name;
-            pokeType(pokemontype);
+            let pokenumber = data.order;
+            let pokeHP = data.stats[0].base_stat;
+            let pokeAttack = data.stats[1].base_stat;
+            let pokeDefense = data.stats[2].base_stat;
+            let pokeSAttack = data.stats[3].base_stat;
+            let pokeSDefense = data.stats[4].base_stat;
+            let pokeSpeed = data.stats[5].base_stat;
+
+            
+            pokeImage(pokeImg, "pokeImg");
+            pokeImage(pokeImgBack, "pokeImgBack");
+            pokeInner(pokemontype, "pokeTYPE");
+            pokeInner(pokeHP, "pokeHP");
+            pokeInner(pokeAttack, "pokeAttack");
+            pokeInner(pokeDefense, "pokeDefense");
+            pokeInner(pokeSAttack, "pokeSAttack");
+            pokeInner(pokeSDefense, "pokeSDefense");
+            pokeInner(pokeSpeed, "pokeSpeed");
         }
     });
 }
 
-const pokeImage = (url) => {
-    const pokePhoto = document.getElementById("pokeImg");
+const pokeImage = (url, wherePhoto) => {
+    const pokePhoto = document.getElementById(wherePhoto);
     pokePhoto.src = url;
 }
 
-const pokeType = (type) => {
-    document.getElementById("pokeTYPE").innerHTML = type;
+const pokeInner = (data, whereInner) => {
+    document.getElementById(whereInner).innerHTML = data;
 }
