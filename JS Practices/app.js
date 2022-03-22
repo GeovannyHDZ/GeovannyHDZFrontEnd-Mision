@@ -15,6 +15,8 @@ const fetchPokemon = () => {
         if (data) {
             let pokeImg = data.sprites.front_default;
             pokeImage(pokeImg);
+            let pokemontype = data.types[0].type.name;
+            pokeType(pokemontype);
         }
     });
 }
@@ -22,4 +24,8 @@ const fetchPokemon = () => {
 const pokeImage = (url) => {
     const pokePhoto = document.getElementById("pokeImg");
     pokePhoto.src = url;
+}
+
+const pokeType = (type) => {
+    document.getElementById("pokeTYPE").innerHTML = type;
 }
