@@ -8,9 +8,16 @@
 </head>
 <body>
     <h1>Pokedex</h1>
-    <input type="text" placeholder="pikachu" id="pokeName" name="pokeName"> <br>
-    <img src="./src/pokeball.png" alt="Pokemon" id="pokeImg" width="150px"><br>
+    
+    <label for="pokeName">Name</label>
+    <input type="text" placeholder="pikachu" id="pokeName" name="pokeName"> <br><br>
+    <label for="pokeImg">Image</label>
+    <img src="./src/pokeball.png" alt="Pokemon" id="pokeImg" name="pokeImg" width="150px"><br><br>
+   
+    <label for="pokeTYPE">TYPE</label>
+    <p id="pokeTYPE"></p>
     <button onclick="fetchPokemon()">Cambiar Imágen</button>
+   
 </body>
 <footer>
     <script src="./app.js"></script>
