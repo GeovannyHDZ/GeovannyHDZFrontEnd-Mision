@@ -6,7 +6,8 @@ const fetchPokemon = () => {
     fetch(url).then((res) => {
         if (res.status != "200") {
             console.log(res);
-            pokeImage("./src/Error-404.png")
+            pokeImage("./src/Error-404.png", "pokeImg");
+            pokeImage("./src/Error-404.png", "pokeImgBack");
         }
         else {
             return res.json();
@@ -23,23 +24,22 @@ const fetchPokemon = () => {
             let pokeSAttack = data.stats[3].base_stat;
             let pokeSDefense = data.stats[4].base_stat;
             let pokeSpeed = data.stats[5].base_stat;
-            let Moves = data.moves;
-            
-            
-            
+            let pokeMoves = data.moves.map(function(movimientos){
+                return movimientos.move.name
+            })
             
             pokeImage(pokeImg, "pokeImg");
             pokeImage(pokeImgBack, "pokeImgBack");
-            pokeInner(pokemontype, "pokeTYPE");
+            pokeInner(pokemontype.toUpperCase(), "pokeTYPE");
             pokeInner(pokeHP, "pokeHP");
             pokeInner(pokeAttack, "pokeAttack");
             pokeInner(pokeDefense, "pokeDefense");
             pokeInner(pokeSAttack, "pokeSAttack");
             pokeInner(pokeSDefense, "pokeSDefense");
             pokeInner(pokeSpeed, "pokeSpeed");
+            pokeInner(pokenumber, "pokenumber");
+            pokeInner(pokeMoves, "pokeMoves");
             
-            pokeMoves(Moves);
-           
         }
     });
 }
@@ -54,18 +54,3 @@ const pokeInner = (data, whereInner) => {
 }
 
 
-
-
-/*
-function pokeMoves(Moves) {
-    let valores = Object.values(Moves);
-    for(let i=0; i< valores .length; i++){
-        pokeInner(valores[i].moves.name, "pokeMoves");
-    }
-}
-
-/*
-Moves.forEach(function(movimiento, index) {
-        console.log(`${index} : ${movimiento.move.name}`);
-        document.getElementById("pokeMoves").innerHTML = `${index} : ${movimiento.move.name}`;
-    });*/ 
