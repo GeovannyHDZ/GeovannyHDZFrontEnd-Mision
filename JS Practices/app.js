@@ -16,7 +16,9 @@ const fetchPokemon = () => {
         if (data) {
             let pokeImg = data.sprites.front_default;
             let pokeImgBack = data.sprites.back_default;
-            let pokemontype = data.types[0].type.name;
+            let poketype = data.types.map(function(tipos){
+                return tipos.type.name
+            })
             let pokenumber = data.order;
             let pokeHP = data.stats[0].base_stat;
             let pokeAttack = data.stats[1].base_stat;
@@ -30,7 +32,7 @@ const fetchPokemon = () => {
             
             pokeImage(pokeImg, "pokeImg");
             pokeImage(pokeImgBack, "pokeImgBack");
-            pokeInner(pokemontype.toUpperCase(), "pokeTYPE");
+            pokeInner(poketype, "pokeTYPE");
             pokeInner(pokeHP, "pokeHP");
             pokeInner(pokeAttack, "pokeAttack");
             pokeInner(pokeDefense, "pokeDefense");
@@ -52,5 +54,4 @@ const pokeImage = (url, wherePhoto) => {
 const pokeInner = (data, whereInner) => {
     document.getElementById(whereInner).innerHTML = data;
 }
-
 
