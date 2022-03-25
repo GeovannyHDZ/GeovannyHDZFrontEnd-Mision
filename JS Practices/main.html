@@ -9,17 +9,17 @@
 <body>
     <!--Titulo y botón-->
     <h1>Pokedex</h1>
-    <button onclick="fetchPokemon()">Cambiar Imágen</button>
+    <button onclick="fetchPokemon()">Find</button>
     <br><br>
     <!--Input Nombre-->
     <div>
-        <label for="pokeName">Name</label> 
+        <label for="pokeName">Name or Number</label> 
         <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
         
     </div>
     <!--Número de Pokémon-->
    <div>
-    <label>N0.</label><p id="pokenumber"></p>
+    <label>N0.</label><span id="pokenumber"></span>
    </div>
    <!--Tabla de Imagenes-->
    <div>
@@ -43,7 +43,7 @@
     </div>
     <!--Tabla de Stats-->
     <div>
-        <table>
+        <table class="stats">
             <tr>
                 <th>HP</th>
                 <th>Attack</th>
