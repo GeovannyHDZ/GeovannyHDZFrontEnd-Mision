@@ -29,7 +29,15 @@ const fetchPokemon = () => {
             let pokeMoves = data.moves.map(function(movimientos){
                 return movimientos.move.name
             })
+            let list = document.getElementById("pokeMoves");
+            pokeMoves.forEach((item)=>{
+                let li = document.createElement("li");
+                li.innerText = item;
+                list.appendChild(li);
+              })
+
             
+            on();
             pokeImage(pokeImg, "pokeImg");
             pokeImage(pokeImgBack, "pokeImgBack");
             pokeInner(poketype, "pokeTYPE");
@@ -40,7 +48,7 @@ const fetchPokemon = () => {
             pokeInner(pokeSDefense, "pokeSDefense");
             pokeInner(pokeSpeed, "pokeSpeed");
             pokeInner(pokenumber, "pokenumber");
-            pokeInner(pokeMoves, "pokeMoves");
+
             
         }
     });
@@ -54,4 +62,10 @@ const pokeImage = (url, wherePhoto) => {
 const pokeInner = (data, whereInner) => {
     document.getElementById(whereInner).innerHTML = data;
 }
+function on() {
+    document.getElementById("overlay").style.display = "block";
+  }
 
+function off() {
+    document.getElementById("overlay").style.display = "none";
+  }
