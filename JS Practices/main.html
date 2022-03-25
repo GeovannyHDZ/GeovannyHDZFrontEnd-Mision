@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Style.css">
+   
     <title>Pokedex</title>
 </head>
 <body>
@@ -11,12 +12,14 @@
     <h1>Pokedex</h1>
     <button onclick="fetchPokemon()">Find</button>
     <br><br>
-    <!--Input Nombre-->
     <div>
-        <label for="pokeName">Name or Number</label> 
+        <label for="pokeName">Name</label> 
         <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
         
     </div>
+<div id="overlay" onclick="off()">
+    <!--Input Nombre-->
+    
     <!--Número de Pokémon-->
    <div>
     <label>N0.</label><span id="pokenumber"></span>
@@ -63,10 +66,12 @@
         </table>
     </div>
     <!--Movimientos-->
-    <div>
-        <p>Moves</p>
-        <p id="pokeMoves"></p>
+        <label>Moves</label> <br>
+    <div class="Moves">
+        <ul id="pokeMoves"></ul>
     </div>
+</div>
+
 </body>
 <footer>
     <script src="./app.js"></script>
