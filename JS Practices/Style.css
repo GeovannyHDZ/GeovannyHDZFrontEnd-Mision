@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Press+Start+2P&family=Rubik+Mono+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 
 *{
-   /* font-family: 'Rubik Mono One', sans-serif; */
-    font-family: 'Press Start 2P', cursive;
+   
+   font-family: 'Press Start 2P', cursive;
+   
+    
 }
 
 body{
-    margin: 0 5% 0 5%;
+    margin: 20px 5% 0 5%;
     
 }
 
