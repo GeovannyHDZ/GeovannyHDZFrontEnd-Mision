@@ -9,68 +9,71 @@
 </head>
 <body>
     <!--Titulo y botón-->
-    <h1>Pokedex</h1>
-    <button onclick="fetchPokemon()">Find</button>
-    <br><br>
-    <div>
-        <label for="pokeName">Name</label> 
-        <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
-        
-    </div>
-<div id="overlay" onclick="off()">
-    <!--Input Nombre-->
-    
-    <!--Número de Pokémon-->
-   <div>
-    <label>N0.</label><span id="pokenumber"></span>
-   </div>
-   <!--Tabla de Imagenes-->
-   <div>
-    <table>
-        <tr>
-            <th>Front</th>
-            <th>Back</th>
-        </tr>
-        <tr>
-            <th><img src="./src/pokeball.png" alt="Pokemon" id="pokeImg" name="pokeImg" width="250px"></th>
-            <th> <img src="./src/pokeball.png" alt="Pokemon" id="pokeImgBack" name="pokeImg" width="250px"></th>
-        </tr>
-    </table>
-        <br>
-    </div>
-    <!--Tipos-->
-    <div>
-        <label for="pokeTYPE">TYPE</label>
-        <span id="pokeTYPE"></span><br>
-    <br>
-    </div>
-    <!--Tabla de Stats-->
-    <div>
-        <table class="stats">
+        <h1>Pokedex</h1>
+        <!--Input Nombre-->
+        <div>
+            <label for="pokeName">Name or Number</label> 
+            <input type="text" placeholder="pikachu // 25" id="pokeName" name="pokeName">
+        </div>
+        <br><br>
+        <!--Botón-->
+        <div class="center">
+            <button onclick="fetchPokemon()">Find</button>
+        </div>
+        <br><br>
+       
+        <!--Número, peso, nombre y tipo de Pokémon-->
+       <div class="info">
+        <label>N0.   </label><span id="pokenumber"></span>
+        <label>   Weight   </label><span id="pokeWeight"></span>
+        <label>   Name     </label><span id="name"></span>
+        <label for="pokeTYPE">TYPE</label> <span id="pokeTYPE"></span><br>
+       </div>
+       <br> <br>
+
+       <!--Tabla de Imagenes-->
+       <div>
+        <table>
             <tr>
-                <th>HP</th>
-                <th>Attack</th>
-                <th>Defense</th>
-                <th>Special Attack</th>
-                <th>Special Defense</th>
-                <th>Speed</th>
+                <th>Front</th>
+                <th>Back</th>
             </tr>
             <tr>
-                <th><span id="pokeHP"></span></th>
-                <th><span id="pokeAttack"></span></th>
-                <th><span id="pokeDefense"></span></th>
-                <th><span id="pokeSAttack"></span></th>
-                <th><span id="pokeSDefense"></span></th>
-                <th><span id="pokeSpeed"></span></th>
+                <th><img src="./src/pokeball.png" alt="Pokemon" id="pokeImg" name="pokeImg" width="250px"></th>
+                <th> <img src="./src/pokeball.png" alt="Pokemon" id="pokeImgBack" name="pokeImg" width="250px"></th>
             </tr>
         </table>
-    </div>
-    <!--Movimientos-->
+        </div>
+        <br><br>
+
+        <!--Tabla de Stats-->
+        <div>
+            <table class="stats">
+                <tr>
+                    <th>HP</th>
+                    <th>Attack</th>
+                    <th>Defense</th>
+                    <th>Special Attack</th>
+                    <th>Special Defense</th>
+                    <th>Speed</th>
+                </tr>
+                <tr>
+                    <th><span id="pokeHP"></span></th>
+                    <th><span id="pokeAttack"></span></th>
+                    <th><span id="pokeDefense"></span></th>
+                    <th><span id="pokeSAttack"></span></th>
+                    <th><span id="pokeSDefense"></span></th>
+                    <th><span id="pokeSpeed"></span></th>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+        
+        <!--Movimientos-->
         <label>Moves</label> <br>
-    <div class="Moves">
-        <ul id="pokeMoves"></ul>
-    </div>
-</div>
+        <div class="Moves">
+            <ul id="pokeMoves"></ul>
+        </div>
 
 </body>
 <footer>
