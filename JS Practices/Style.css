@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Press+Start+2P&family=Rubik+Mono+One&display=swap');
+
+
 *{
-    font-family: Helvetica;
+   /* font-family: 'Rubik Mono One', sans-serif; */
+    font-family: 'Press Start 2P', cursive;
 }
 
 body{
     margin: 0 5% 0 5%;
     
 }
+
 
 table{
     margin-left: auto;
@@ -34,6 +39,15 @@ button:hover{
     box-shadow: none;
     color: white;
 }
+
+.Moves{
+    column-count: 5;
+}
+li{
+    font-size: medium;
+    line-height: 0.7cm;
+}
+
 
 /*Creditos Finales*/
 .credits{
