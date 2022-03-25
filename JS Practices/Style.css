@@ -3,15 +3,29 @@
 *{
    
    font-family: 'Press Start 2P', cursive;
-   
+   color: white;
     
 }
 
 body{
     margin: 20px 5% 0 5%;
+    /*
+    background: #59C173;   fallback for old browsers */
+   /* background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+   /* background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+   background: #000000;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+
+
     
 }
 
+h1{
+    text-align: center;
+}
 
 table{
     margin-left: auto;
@@ -25,21 +39,31 @@ table{
   }
 
 
-button{
+  button {
     border-radius: 10px;
-
     border: solid 3px transparent;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa);
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(to right, #654ea3, #eaafc8);;
     background-origin: border-box;
     background-clip: content-box, border-box;
-    box-shadow: 2px, 1000px, 1px, #fff inset;
+    box-shadow: 2px 1000px 1px #fff inset;
 
+    padding: 50px 40% 50px 40%;
+
+    color: black;
 }
 
-button:hover{
+button:hover {
     box-shadow: none;
     color: white;
 }
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid green;
+}
+
 
 .Moves{
     column-count: 5;
@@ -47,6 +71,17 @@ button:hover{
 li{
     font-size: medium;
     line-height: 0.7cm;
+}
+
+.info{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info span{
+    font-size: small;
+    text-decoration: underline;
+    color: red;
 }
 
 
@@ -64,3 +99,9 @@ li{
     font-size: 14px;
     font-family: monospace;
 }
+
+/*
+
+
+
+*/
